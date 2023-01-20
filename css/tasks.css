@@ -31,19 +31,19 @@
 }
 
 .tasks__button--toggleDone:active {
-    background: hsl(120, 61%, 44%);
+    background: hsl(120, 59%, 64%);
 }
 
 .tasks__button--remove {
-    background: red;
+    background: crimson;
 }
 
 .tasks__button--remove:hover {
-    background: rgb(243, 70, 70);
+    background: rgb(247, 39, 81);
 }
 
 .tasks__button--remove:active {
-    background: rgb(247, 112, 112);
+    background: rgb(246, 96, 126);
 }
 
 .tasks__content--done {
