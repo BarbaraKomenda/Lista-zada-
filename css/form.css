@@ -19,10 +19,12 @@
     background: teal;
     color: white;
     border: none;
+    transition: 0.3s;
 }
 
 .form__button:hover {
     background-color: rgb(18, 181, 181);
+    transform: scale(1.1);
 }
 
 .form__button:active {
