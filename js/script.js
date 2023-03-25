@@ -125,8 +125,9 @@
             bindToggleDoneEvents();
             renderButtons();
             bindButtonsEvents();
+            init();
         };
-        
+
         const onFormSubmit = (event) => {
             event.preventDefault();
 
