@@ -93,7 +93,7 @@
         if (!tasks.lenght) {
             buttonsElement.innerHTML = "";
             return;
-        }
+        };
 
         buttonsElement.innerHTML = `
     <button class="buttons__button js-toggleHideDoneTasks">
@@ -112,20 +112,19 @@
 
         if (markAllDoneButton) {
             markAllDoneButton.addEventListener("click", markAllTasksDone);
-        }
+        };
 
         const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTask");
 
         if (toggleHideDoneTasksButton) {
             toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
-        }
+        };
         const render = () => {
             renderTasks();
             bindRemoveEvents();
             bindToggleDoneEvents();
             renderButtons();
             bindButtonsEvents();
-            init();
         };
 
         const onFormSubmit = (event) => {
@@ -134,12 +133,12 @@
             const newTaskElement = document.querySelector(".js-newTask");
             const newTaskContent = newTaskElement.value.trim();
 
-        }
+        };
 
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskElement.value = "";
-        }
+        };
         newTaskElement.focus();
     };
 
