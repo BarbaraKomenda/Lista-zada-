@@ -15,7 +15,7 @@
             ...tasks.slice(0, taskIndex),
             {
                 ...tasks[taskIndex],
-                done: !tasks[taskIndex].done
+                done: !tasks[taskIndex].done,
             },
             ...tasks.slice(taskIndex + 1),
         ];
@@ -26,7 +26,7 @@
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
-            { content: newTaskContent },
+            { content: newTaskContent }
         ];
         render();
     };
@@ -97,8 +97,8 @@
 
         buttonsElement.innerHTML = `
     <button class="buttons__button js-toggleHideDoneTasks">
-    ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończkone
-    <\button>
+    ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+    </button>
     <button class="buttons__button js-markAllDone"
     ${tasks.every(({ done }) => done) ? " disabled" : ""}
     >
@@ -123,10 +123,10 @@
             renderTasks();
             bindRemoveEvents();
             bindToggleDoneEvents();
-
             renderButtons();
             bindButtonsEvents();
         };
+        
         const onFormSubmit = (event) => {
             event.preventDefault();
 
