@@ -1,6 +1,29 @@
+
 {
+    const grettings = () => {
+          console.log("Hello Youcode");
+    };
+    
+    
     let tasks = [];
     let hideDoneTasks = false;
+
+    const addNewTask = (newTaskContent) => {
+        tasks = [
+            ...tasks,
+            { content: newTaskContent }
+        ];
+        render();
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
+        render();
+    };
 
     const removeTask = (taskIndex) => {
         tasks = [
@@ -19,23 +42,6 @@
             },
             ...tasks.slice(taskIndex + 1),
         ];
-
-        render();
-    };
-
-    const addNewTask = (newTaskContent) => {
-        tasks = [
-            ...tasks,
-            { content: newTaskContent }
-        ];
-        render();
-    };
-
-    const markAllTasksDone = () => {
-        tasks = tasks.map((task) => ({
-            ...task,
-            done: true,
-        }));
 
         render();
     };
@@ -153,3 +159,4 @@
     init();
 
 }
+
