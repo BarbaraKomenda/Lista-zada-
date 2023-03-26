@@ -1,6 +1,6 @@
 # LISTA ZADAŃ
 
-As part of my homework on the Frontend Developer course on the **youcode platform**, I created a task list. The user can enter tasks into the list. On the list, it is possible to select completed tasks or remove them completely.
+As part of my homework on the Frontend Developer course on the **youcode platform**, I created a task list. The user can enter tasks into the list. On the list, it is possible to select completed tasks or remove them completely. There is also an option to hide or show completed tasks and complete all tasks.
 
 
 You can visit it here: [homepage](https://barbarakomenda.github.io/lista-zadan/)
