@@ -1,7 +1,7 @@
 .tasks {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .tasks__item {
@@ -9,11 +9,15 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
+    border-bottom: solid 1px #ddd;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
 .tasks__item--hidden {
+    display: none;
+}
+
+.tasks__content--done {
     text-decoration: line-through;
 }
 
@@ -23,8 +27,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    margin-left: 0px;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .tasks__button--toggleDone {
@@ -36,21 +39,17 @@
 }
 
 .tasks__button--toggleDone:active {
-    background: hsl(120, 59%, 64%);
+    background: hsl(120, 61%, 44%);
 }
 
 .tasks__button--remove {
-    background: crimson;
+    background: hsl(348, 83%, 47%);
 }
 
 .tasks__button--remove:hover {
-    background: rgb(247, 39, 81);
+    background: hsl(348, 83%, 52%);
 }
 
 .tasks__button--remove:active {
-    background: rgb(246, 96, 126);
-}
-
-.tasks__content--done {
-    text-decoration: line-through;
+    background: hsl(348, 83%, 57%);
 }

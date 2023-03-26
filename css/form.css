@@ -1,8 +1,9 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 20px;
+    gap: 20px;
 }
+
 @media(max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
@@ -10,23 +11,23 @@
 }
 
 .form__input {
+    border: 1px solid #ddd;
     padding: 10px;
-    border: 10px solid #ddd;
 }
 
 .form__button {
-    padding: 10px;
-    background: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
+    padding: 10px;
     transition: 0.3s;
 }
 
 .form__button:hover {
-    background-color: rgb(18, 181, 181);
+    background: hsl(180, 100%, 30%);
     transform: scale(1.1);
 }
 
 .form__button:active {
-    background: rgb(20, 230, 230);
+    background: hsl(180, 100%, 35%);
 }
