@@ -1,10 +1,10 @@
 
 {
     const grettings = () => {
-          console.log("Hello Youcode");
+        console.log("Hello Youcode");
     };
-    
-    
+
+
     let tasks = [];
     let hideDoneTasks = false;
 
@@ -38,7 +38,7 @@
             ...tasks.slice(0, taskIndex),
             {
                 ...tasks[taskIndex],
-                done: !tasks[taskIndex].done
+                done: !tasks[taskIndex].done,
             },
             ...tasks.slice(taskIndex + 1),
         ];
@@ -76,12 +76,12 @@
 
     const renderTasks = () => {
         const taskToHTML = task => `
-        <li class="
-        tasks__item${task.done && hideDoneTasks ? " tasks_item--hidden" : ""} js-task">
+        <li class="tasks__item${task.done && hideDoneTasks ? " tasks_item--hidden" : ""} js-task">
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-                ${task.done ? "✓;" : ""}
+                ${task.done ? "✓" : ""}
             </button>
-            <span class="tasks__content${task.done ? " tasks__content--done" : ""}">${task.content}
+            <span class="tasks__content${task.done ? " tasks__content--done" : ""}">
+            ${task.content}
             </span>
             <button class="tasks__button tasks__button--remove js-remove">
             🗑
@@ -128,7 +128,6 @@
         const render = () => {
             renderTasks();
             renderButtons();
-
             bindRemoveEvents();
             bindToggleDoneEvents();
             bindButtonsEvents();
