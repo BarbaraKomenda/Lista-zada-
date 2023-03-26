@@ -7,8 +7,7 @@ You can visit it here: [homepage](https://barbarakomenda.github.io/lista-zadan/)
 
 ## Page preview:
 
-
-https://user-images.githubusercontent.com/122162134/227792864-0b0d449a-066e-46e6-94fc-9c059cb9afaa.mov
+https://user-images.githubusercontent.com/122162134/227792914-04e1c2bd-9c48-4d6f-95cc-401efcd41f52.mov
 
 
 ## To create this website I used the following technologies:
