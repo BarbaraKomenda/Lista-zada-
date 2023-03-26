@@ -1,5 +1,5 @@
 {
-    const grettings = () => {
+    const welcome = () => {
         console.log("Hello Youcode");
     };
 
